@@ -1,0 +1,130 @@
+* {
+    outline: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #1a1e33;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    width: 70%;
+    padding:10px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* clock styling */
+.clock ul {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.clock ul li {
+    display: inline-block;
+    padding : 4%;
+    margin: 0.6em;
+    background-color: #fff;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-radius: 30px;
+    background-color: slategrey;
+}
+
+/* set Alarm */
+.set-alarm {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}  
+
+.column {
+    flex-grow: 1;
+    /* border: solid green 1px; */
+}
+
+.column select {
+    padding: 0.5em;
+    width: 95%;
+    border-radius: 5px;
+    color: black;
+    background-color: grey;
+}
+
+
+/* Button - Add alarm */
+
+.button-Add-Alarm {
+    padding: 0.6em;
+    width: 95%;
+    background-color: black;
+    border-radius: 5px;
+    color: grey;
+    outline: none;
+    border: 0px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+.button-Add-Alarm:hover {
+    background-color: slategray;
+    color: black;
+}
+
+
+/* alarm list */
+.alarm-list {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1%;
+    width: 60%;
+    margin-top: 10px;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid grey;
+    max-height: 400px;
+    overflow: auto;
+
+    -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.alarm-list::-webkit-scrollbar {
+    display: none;
+}
+
+.alarm-list-child-div {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    color: slategray;
+    padding: 2% 0px;
+    margin: 3px;
+    border-radius: 7px;
+}
+
+.delete-button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+}
+
+.delete-button:hover {
+    text-decoration:underline;
+    cursor: pointer;
+    color: red;
+}

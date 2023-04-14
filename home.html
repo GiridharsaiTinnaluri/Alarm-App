@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <!-- adding tiltle -->
+        <title>Javascript Test 1</title>
+
+        <!-- CSS files -->
+        <link href="./home.css" rel="stylesheet"/>
+    </head>
+    <body>
+
+        <div class="container">
+
+            <!-- Display Clock -->
+            <h1 style="color:gray">Clock</h1>
+            <section class="clock">
+                <ul>
+                    <li id="hours">00</li> :
+                    <li id="minutes">00</li> :
+                    <li id="seconds">00</li> :
+                    <li id="period">AM</li>
+                </ul>
+            </section>
+
+            <!-- set Alarm -->
+            <p style="color: whitesmoke; 
+                      font-size: x-small;
+                      text-align: center;
+                     "
+            >
+                 Set Alarm :
+            </p>
+            <section class="set-alarm">
+                <!-- 12 Hours Select Option input  -->
+                <div class="column">
+                    <select id="hoursInput">
+                        <option value="hour" selected hidden>
+                            Hour
+                        </option>
+                    </select>
+                </div>
+                <!-- Minutes Select Option input  -->
+                <div class="column">
+                    <select id="minutesInput">
+                        <option value="minute" selected hidden>
+                            Minute
+                        </option>
+                    </select>
+                </div>
+                <!-- AM/PM Select Option input  -->
+                <div class="column">
+                    <select id="AMPM">
+                        <option value="AM">
+                            AM
+                        </option>
+                        <option value="PM">
+                            PM
+                        </option>
+                    </select>
+                </div>
+                <!-- Add Alarm Button -->
+                <div class="column">
+                    <button type="button" class="button-Add-Alarm">Add Alarm</button>
+                </div>
+            </section>
+
+            <br/>
+            
+            <hr style="border-color: grey;"/>
+            
+            <!-- alarm lists -->
+            <p style="color: whitesmoke; 
+                        font-size: x-small;
+                        text-align: center;
+                        margin-top: 10px;
+                    "
+            >
+                Alarm List :
+            </p>
+            <section class="alarm-list">
+                <!-- Append Alarm list Content here -->
+            </section>
+        </div>
+
+        <script src="./script.js" type="text/javascript"></script>
+    </body>
+</html>
